@@ -4,7 +4,7 @@ import Signup from './components/Signup';
 import Login from './components/Login';
 import TodoList from './components/TodoList';
 import Users from "./components/Users";
-import TaskList from './components/TaskLists';
+import TaskList from './components/TaskList';
 import  Tasks  from './components/Tasks';
 
 const App = () => {
@@ -16,7 +16,7 @@ const App = () => {
           <Route path='/login' element ={<Login />} />
           <Route path="/todolist/*" element={<TodoList />} />
            <Route path='/users' element={<Users/>}/>
-          <Route path='/tasklists' element={<TaskLists/>}/>
+          <Route path='/task-list' element={<TaskList/>}/>
           <Route path='tasks' element={<Tasks/>}/>
         </Routes>
       </div>
