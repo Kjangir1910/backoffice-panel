@@ -12,6 +12,9 @@ const App = () => {
           <Route path="/" element={<Signup />} />
           <Route path='/login' element ={<Login />} />
           <Route path="/todolist/*" element={<TodoList />} />
+           <Route path='/users' element={<Users/>}/>
+          <Route path='/task-lists' element={<TaskList/>}/>
+          <Route path='tasks' element={<Tasks/>}/>
         </Routes>
       </div>
     </Router>
