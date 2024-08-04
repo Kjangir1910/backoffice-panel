@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { db, auth } from "../firebase";  // Corrected import path
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
-import "./Task.css";
+
 
 const Task = ({ listId }) => {
   const [tasks, setTasks] = useState([]);
