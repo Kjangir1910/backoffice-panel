@@ -33,7 +33,11 @@ function Login() {
       try {
         await signInWithEmailAndPassword(auth, email, password);
         setError(""); // Clear error on successful login
-        navigate("/todolist", { replace: true });
+        navigate("/todolist", {
+        replace: true, state: {
+          email : email
+        }
+      });
       } catch (error) {
         setError(error.message);
       }
