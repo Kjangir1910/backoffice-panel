@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { auth, db } from "../firebase";
+//import { auth, db } from "../firebase";
+import { auth } from "../firebase";
 import { createUserWithEmailAndPassword } from "firebase/auth";
-import { doc, setDoc } from "firebase/firestore";
+//import { doc, setDoc } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
 
 const Signup = () => {
@@ -9,6 +10,8 @@ const Signup = () => {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const navigate = useNavigate();
+
+
 
   const handleSignup = async () => {
     try {
@@ -20,7 +23,7 @@ const Signup = () => {
     }
   };
 
-    const handleLogin = async () => {
+  const handleLogin = async () => {
     navigate("/login", { replace: true });
   }
 
@@ -46,7 +49,8 @@ const Signup = () => {
         />
         <div style={styles.buttonContainer}>
           <button style={styles.signupButton} onClick={handleSignup}>Sign Up</button>
-          <a href="/login" style={styles.loginLink} onClick = {handleLogin}>Login</a>
+            <button style={styles.signupButton} onClick={handleLogin}>Login</button>
+          {/* <a href="/login" style={styles.loginLink}>Login</a> */}
         </div>
       </div>
     </div>
