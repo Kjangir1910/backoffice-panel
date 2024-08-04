@@ -46,7 +46,7 @@ const Signup = () => {
         />
         <div style={styles.buttonContainer}>
           <button style={styles.signupButton} onClick={handleSignup}>Sign Up</button>
-          <a href="/login" style={styles.loginLink onClick = {handleLogin}>Login</a>
+          <a href="/login" style={styles.loginLink} onClick = {handleLogin}>Login</a>
         </div>
       </div>
     </div>
