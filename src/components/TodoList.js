@@ -4,6 +4,7 @@ import { collection, addDoc, deleteDoc, doc, query, where, onSnapshot, updateDoc
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 import { useLocation, useNavigate } from "react-router-dom";
 import { NavLink } from "react-router-dom";
+import "./TodoList.css";
 
 const priorities = ["Low", "Medium", "High"];
 
