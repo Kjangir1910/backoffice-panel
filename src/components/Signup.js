@@ -20,6 +20,10 @@ const Signup = () => {
     }
   };
 
+    const handleLogin = async () => {
+    navigate("/login", { replace: true });
+  }
+
   return (
     <div style={styles.signupContainer}>
       <div style={styles.signupCard}>
@@ -42,7 +46,7 @@ const Signup = () => {
         />
         <div style={styles.buttonContainer}>
           <button style={styles.signupButton} onClick={handleSignup}>Sign Up</button>
-          <a href="/login" style={styles.loginLink}>Login</a>
+          <a href="/login" style={styles.loginLink onClick = {handleLogin}>Login</a>
         </div>
       </div>
     </div>
